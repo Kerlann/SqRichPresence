@@ -6,7 +6,7 @@ import com.jagrosh.discordipc.entities.RichPresenceButton;
 import com.jagrosh.discordipc.entities.pipe.PipeStatus;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(modid = "sqrichpresence", name = "SqRichPresence", dependencies = "required-after:sqript@[${version},);")
+@Mod(modid = "sqrichpresence", name = "SqRichPresence", dependencies = "required-before:sqript@${version}", version = "1.0.0")
 public class SqRichPresence {
 
     public static long currentTime = System.currentTimeMillis();

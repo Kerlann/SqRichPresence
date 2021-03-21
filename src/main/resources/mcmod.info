@@ -1,16 +1,17 @@
 [
   {
-    "modid": "sqdata",
-    "name": "sqData",
-    "description": "A mod to manage persistent data in Minecraft !",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "modid": "sqrichpresence",
+    "name": "SqRichPresence",
+    "description": "Discord RichPresence with Sqript !",
+    "version": "1.0.0",
+    "mcversion": "1.12.2",
     "url": "",
     "updateUrl": "",
-    "authorList": ["Nathanael2611","Protoxy","Kerlann"],
+    "authorList": ["Kerlann"],
     "credits": "The Forge and FML guys, for making this example",
     "logoFile": "",
     "screenshots": [],
-    "dependencies": []
+    "requiredMods ": ["sqript"],
+    "dependencies": ["sqript"]
   }
 ]

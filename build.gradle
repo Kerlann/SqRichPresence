@@ -68,8 +68,11 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
-    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation group: 'org.json', name: 'json', version: '20090211'
 
+    compile fileTree(dir: 'libs', include: '*.jar')
+    shade group: 'com.jagrosh', name: 'DiscordIPC', version: '0.5'
+    shade group: 'org.json', name: 'json', version: '20090211'
 }
 
 repositories {
