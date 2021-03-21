@@ -1,1 +1,1 @@
-# SqData
+# SqRichPresence
