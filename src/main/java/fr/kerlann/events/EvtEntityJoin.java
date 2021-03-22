@@ -1,6 +1,5 @@
 package fr.kerlann.events;
 
-
 import fr.nico.sqript.events.ScriptEvent;
 import fr.nico.sqript.meta.Event;
 import fr.nico.sqript.structures.ScriptAccessor;
