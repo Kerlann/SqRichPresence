@@ -1,6 +1,5 @@
 package fr.kerlann.expressions;
 
-
 import com.jagrosh.discordipc.entities.RichPresenceButton;
 import fr.kerlann.SqRichPresence;
 import fr.nico.sqript.expressions.ScriptExpression;
@@ -10,7 +9,6 @@ import fr.nico.sqript.structures.Side;
 import fr.nico.sqript.types.ScriptType;
 import fr.nico.sqript.types.TypeDictionary;
 import fr.nico.sqript.types.primitive.TypeString;
-
 
 @Expression(name = "RichPresence Expressions",
         description = "Manipulate RichPresence",
