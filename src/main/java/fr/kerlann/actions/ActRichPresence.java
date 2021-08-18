@@ -14,7 +14,7 @@ import fr.nico.sqript.structures.Side;
 
 @Action(name = "RichPresence Actions",
         description ="init Discord RichPresence",
-        examples = "initRichPresence \"discord bot id\"",
+        examples = "initRichPresence (id)",
         patterns = "initRichPresence {string}",
         side = Side.CLIENT
 )
