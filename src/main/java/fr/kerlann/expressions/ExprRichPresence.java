@@ -4,19 +4,18 @@ import com.jagrosh.discordipc.entities.RichPresenceButton;
 import fr.kerlann.SqRichPresence;
 import fr.nico.sqript.expressions.ScriptExpression;
 import fr.nico.sqript.meta.Expression;
+import fr.nico.sqript.meta.Feature;
 import fr.nico.sqript.structures.ScriptContext;
 import fr.nico.sqript.structures.Side;
 import fr.nico.sqript.types.ScriptType;
 import fr.nico.sqript.types.TypeDictionary;
 import fr.nico.sqript.types.primitive.TypeString;
 
+
 @Expression(name = "RichPresence Expressions",
-        description = "Manipulate RichPresence",
-        examples = "set data to RichPresence",
-        patterns = {
-                "rich presence:dictionary"
-        },
-        side = Side.CLIENT
+        features = {
+                @Feature(name = "Manipulate Expressions", description = "Manipulate RichPresence", examples = "set ${sqRich} to RichPresence", pattern = "rich presence", type = "dictionary", side = Side.CLIENT),
+        }
 )
 public class ExprRichPresence extends ScriptExpression {
 

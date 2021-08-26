@@ -9,14 +9,13 @@ import fr.nico.sqript.actions.ScriptAction;
 import fr.nico.sqript.compiling.ScriptException;
 import fr.nico.sqript.expressions.ScriptExpression;
 import fr.nico.sqript.meta.Action;
+import fr.nico.sqript.meta.Feature;
 import fr.nico.sqript.structures.ScriptContext;
-import fr.nico.sqript.structures.Side;
 
-@Action(name = "RichPresence Actions",
-        description ="init Discord RichPresence",
-        examples = "initRichPresence (id)",
-        patterns = "initRichPresence {string}",
-        side = Side.CLIENT
+@Action(name = "Network Actions",
+        features = {
+                @Feature(name = "RichPresence Actions", description = "Initialize Discord RichPresence", examples = "initRichPresence (discord bot id)", pattern = "initRichPresence {string}"),
+        }
 )
 public class ActRichPresence extends ScriptAction {
 
