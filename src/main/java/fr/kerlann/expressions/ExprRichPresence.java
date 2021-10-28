@@ -46,7 +46,7 @@ public class ExprRichPresence extends ScriptExpression {
                 if(secondButtonText != null && secondButtonUrl != null) secondDiscordButton = new RichPresenceButton(secondButtonUrl.getObject(), secondButtonText.getObject());
                 if(firstDiscordButton != null) discordButton = new RichPresenceButton[]{firstDiscordButton};
                 if(firstDiscordButton != null && secondDiscordButton != null) discordButton = new RichPresenceButton[]{firstDiscordButton, secondDiscordButton};
-                SqRichPresence.updatePresence(details.getObject(), state.getObject(), largeImageKey.getObject(), largeImageText.getObject(), smallImageKey.getObject(), smallImageText.getObject(), discordButton);
+                SqRichPresence.updatePresence((details != null ? details.getObject() : null), (state != null ? state.getObject() : null), (largeImageKey != null ? largeImageKey.getObject() : null), (largeImageText != null ? largeImageText.getObject() : null), (smallImageKey != null ? smallImageKey.getObject() : null), (smallImageText != null ? smallImageText.getObject() : null), discordButton);
                 return true;
         }
         return false;
